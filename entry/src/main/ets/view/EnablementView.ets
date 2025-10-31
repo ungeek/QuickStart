@@ -14,7 +14,7 @@ export struct EnablementView {
     this.getUIContext().getHostContext()?.resourceManager.getRawFileContent('EnablementData.json').then(value => {
       // Get the buffer content and convert it to a string.
       let res: string = bufferToString(value);
-      // Parse into data structures
+      // Parse into data structures 
       this.enablementList = JSON.parse(res) as ArticleClass[];
     });
   }
